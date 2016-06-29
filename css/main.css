@@ -1,0 +1,349 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+  html{
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .container h1, .container h2, .container h3, .container h4, .container h5, .container h6{
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .hero{
+    height: 350px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .hero:after{
+    display: block;
+    content: " ";
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+  }
+
+  .hero__content{
+    width: 90%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .2);
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .hero__title{
+    font-size: 40px;
+    margin: 0 0 15px 0;
+  }
+
+  .hero__subtitle{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    line-height: 1;
+  }
+
+  .hero__third{
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 960px;
+    font-weight: 300;
+  }
+
+  .main{
+    margin-bottom: 45px;
+  }
+
+  li{
+    list-style-type: square;
+  }
+
+  .info-section{
+    margin-bottom: 40px;
+  }
+
+  .lined-heading{
+    position: relative;
+    color: #515151;
+    margin: 0 0 25px 0;
+    font-size: 30px;
+  }
+
+  .lined-heading:after{
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 8px;
+    background-color: #72b82e;
+    display: inline-block;
+  }
+
+  .cta {
+  	box-shadow:inset 0px 1px 0px 0px #9acc85;
+  	background-color:#73b82e;
+  	border:1px solid #3b6e22;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-size: 18px;
+  	font-weight: bold;
+  	padding: 15px 50px;
+  	text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    transition: 200ms;
+    margin: 60px auto;
+    display: block;
+    max-width: 140px;
+    text-transform: uppercase;
+  }
+  .cta:hover {
+    transition: 200ms;
+  	background-color:#68a54b;
+    max-width: 150px;
+  }
+  .cta:active {
+    transition: 200ms;
+  	position:relative;
+  	top:1px;
+  }
+
+  .notes{
+    font-style: italic;
+    color: #666;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .footer{
+    padding: 40px;
+    background: #515151;
+    text-align: center;
+  }
+
+  .main-carousel{
+    opacity: 0;
+    transition: 200ms;
+    margin-left: -50%;
+    margin-right: -50%;
+  }
+
+  .main-carousel.flickity-enabled{
+    opacity: 1;
+    transition: 200ms;
+  }
+
+  .carousel-cell img{
+    display: block;
+    height: 300px;
+    width: auto;
+  }
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+  .hero__title{
+    font-size: 44px;
+  }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
